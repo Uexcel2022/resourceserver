@@ -12,6 +12,6 @@ public class ResourceServiceImp implements ResourceService {
         var jwt =
                 (Jwt) SecurityContextHolder.getContext()
                         .getAuthentication().getPrincipal();
-       return  "Hello, from" + jwt.getSubject();
+       return  "Hello, from " + jwt.getSubject();
     }
 }
